@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+     <title>pokedex</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+        </div> 
+        <h3>Pokemon trainer | vincent</h3>
+        <a href="#pokemon">Pokemon</a>
+        <a href="#pokemon_type">Pokemon_type</a>
+    </div>
+
+    <div id="home" class="main">
+      
+        <div class="front">
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+        </button>
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        
+        <div id="pokemon_type" class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+              <li class="card" 
+                style=
+                "background-image: url(images/250px-123Scyther.png);
+                background-repeat: no-repeat;
+                background-position: 90px;"
+                >
+                <div><img src="images/bug.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="bug">BUG</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+                "background-image: url(images/250px-025Pikachu.webp);
+                background-repeat: no-repeat;
+                background-position: 90px;"
+                >
+                <div><img src="images/electric.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="electric">electric</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+                "background-image: url(images/250px-036Clefable.png);
+                background-repeat: no-repeat;
+                background-position: 90px;"
+                >
+                <div><img src="images/fairy.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="fairy">fairy</h1>
+                </div>
+              </li>
+              <li class="card" 
+              style=
+              "background-image: url(images/250px-066Machop.png);
+              background-repeat: no-repeat;
+              background-position: 90px;"
+              >
+                <div><img src="images/fighting.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="figthing">fighting</h1>
+                </div>
+              </li>
+              <li class="card" 
+              style=
+                "background-image: url(images/250px-006Charizard.png);
+                background-repeat: no-repeat;
+                background-position: 90px;">
+                <div><img src="images/fire.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="fire">fire</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+                "background-image: url(images/250px-018Pidgeot.png);
+                background-repeat: no-repeat;
+                background-position: 90px;">
+                <div><img src="images/flying.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="flying">flying</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+              "background-image: url(images/250px-094Gengar.png);
+              background-repeat: no-repeat;
+              background-position: 90px;">
+                <div><img src="images/ghost.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="ghost">ghost</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+                "background-image: url(images/250px-003Venusaur.png);
+                background-repeat: no-repeat;
+                background-position: 90px;">
+                <div><img src="images/grass.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="grass">grass</h1>
+                </div>
+              </li>
+              <li class="card" 
+              style=
+                "background-image: url(images/250px-034Nidoking.png);
+                background-repeat: no-repeat;
+                background-position: 90px;">
+                <div><img src="images/ground.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="ground">ground</h1>
+                </div>
+              </li>
+              <li class="card" 
+              style=
+              "background-image: url(images/250px-131Lapras.png);
+              background-repeat: no-repeat;
+              background-position: 90px;">
+                <div><img src="images/ice.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="ice">ice</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+                "background-image: url(images/250px-143Snorlax.png);
+                background-repeat: no-repeat;
+                background-position: 90px;">
+                <div><img src="images/normal.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="normal">normal</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+                "background-image: url(images/250px-031Nidoqueen.png);
+                background-repeat: no-repeat;
+                background-position: 90px;">
+                <div><img src="images/poison.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="poison">poison</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+                "background-image: url(images/250px-065Alakazam.png);
+                background-repeat: no-repeat;
+                background-position: 90px;">
+                <div><img src="images/psychic.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="psychic">psychic</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+              "background-image: url(images/250px-142Aerodactyl.png);
+              background-repeat: no-repeat;
+              background-position: 90px;">
+                <div><img src="images/rock.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="rock">rock</h1>
+                </div>
+              </li>
+              <li class="card"
+              style=
+                "background-image: url(images/250px-082Magneton.png);
+                background-repeat: no-repeat;
+                background-position: 90px;">
+                <div><img src="images/steel.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="steel">steel</h1>
+                </div>
+              </li>
+              <li class="card"style=
+              "background-image: url(images/250px-009Blastoise.png);
+              background-repeat: no-repeat;
+              background-position: 90px;">
+                <div><img src="images/water.svg" alt="img" draggable="false"></div>
+                <div class="main_type">
+                    <h1 class="water">water</h1>
+                </div>
+              </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+
+          <script>
+            const wrapper = document.querySelector(".wrapper");
+            const carousel = document.querySelector(".carousel");
+            const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+            const arrowBtns = document.querySelectorAll(".wrapper i");
+            const carouselChildrens = [...carousel.children];
+
+            let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+
+            // Get the number of cards that can fit in the carousel at once
+            let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+            // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+            carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+                carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+            });
+
+            // Insert copies of the first few cards to end of carousel for infinite scrolling
+            carouselChildrens.slice(0, cardPerView).forEach(card => {
+                carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+            });
+
+            // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+            carousel.classList.add("no-transition");
+            carousel.scrollLeft = carousel.offsetWidth;
+            carousel.classList.remove("no-transition");
+
+            // Add event listeners for the arrow buttons to scroll the carousel left and right
+            arrowBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+                });
+            });
+            const dragStart = (e) => {
+                isDragging = true;
+                carousel.classList.add("dragging");
+                // Records the initial cursor and scroll position of the carousel
+                startX = e.pageX;
+                startScrollLeft = carousel.scrollLeft;
+            }
+
+            const dragging = (e) => {
+                if(!isDragging) return; // if isDragging is false return from here
+                // Updates the scroll position of the carousel based on the cursor movement
+                carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+            }
+
+            const dragStop = () => {
+                isDragging = false;
+                carousel.classList.remove("dragging");
+            }
+
+            const infiniteScroll = () => {
+                // If the carousel is at the beginning, scroll to the end
+                if(carousel.scrollLeft === 0) {
+                    carousel.classList.add("no-transition");
+                    carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+                    carousel.classList.remove("no-transition");
+                }
+                // If the carousel is at the end, scroll to the beginning
+                else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+                    carousel.classList.add("no-transition");
+                    carousel.scrollLeft = carousel.offsetWidth;
+                    carousel.classList.remove("no-transition");
+                }
+
+                // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+                clearTimeout(timeoutId);
+                if(!wrapper.matches(":hover")) autoPlay();
+            }
+
+            const autoPlay = () => {
+                if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+                // Autoplay the carousel after every 2500 ms
+                timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+            }
+            autoPlay();
+
+            carousel.addEventListener("mousedown", dragStart);
+            carousel.addEventListener("mousemove", dragging);
+            document.addEventListener("mouseup", dragStop);
+            carousel.addEventListener("scroll", infiniteScroll);
+            wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+            wrapper.addEventListener("mouseleave", autoPlay);
+          </script>
+
+        <div>
+            <ul class="section" id="pokemon">
+                <li class="slot">
+                    <img src="images/250px-001Bulbasaur.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0001</h6>
+                        <h4>Bulbasaur</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-002Ivysaur.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0002</h6>
+                        <h4>Ivysaur</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-003Venusaur.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0003</h6>
+                        <h4> Venusaur</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-004Charmander.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0004</h6>
+                        <h4>Charmander</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-005Charmeleon.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0005</h6>
+                        <h4>Charmeleon</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-006Charizard.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0006</h6>
+                        <h4>Charizard</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-007Squirtle.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0007</h6>
+                        <h4>Squirtle</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-008Wartortle.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0008</h6>
+                        <h4>Wartortle</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-009Blastoise.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0009</h6>
+                        <h4>Blastoise</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-010Caterpie.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0010</h6>
+                        <h4>Caterpie</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                </li>
+                
+                <li class="slot">
+                    <img src="images/250px-011Metapod.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0011</h6>
+                        <h4>Metapod</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-012Butterfree.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0012</h6>
+                        <h4>Butterfree</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-013Weedle.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0013</h6>
+                        <h4>Weedle</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+                
+                <li class="slot">
+                    <img src="images/250px-014Kakuna.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0014</h6>
+                        <h4>Kakuna</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-015Beedrill.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0015</h6>
+                        <h4>Beedrill</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-016Pidgey.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0016</h6>
+                        <h4>Pidgey</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-017Pidgeotto.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0017</h6>
+                        <h4>Pidgeotto</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-018Pidgeot.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0018</h6>
+                        <h4>Pidgeot</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-019Rattata.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0019</h6>
+                        <h4>Rattata</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-020Raticate.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0020</h6>
+                        <h4>Raticate</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-021Spearow.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0021</h6>
+                        <h4>Spearow</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-022Fearow.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0022</h6>
+                        <h4>Fearow</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-023Ekans.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0023</h6>
+                        <h4>Ekans</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-024Arbok.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0024</h6>
+                        <h4>Arbok</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-025Pikachu.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0025</h6>
+                        <h4>Pikachu</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="electric">electric</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-026Raichu.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0026</h6>
+                        <h4>Raichu</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="electric">electric</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-027Sandshrew.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0027</h6>
+                        <h4>Sandshrew</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-028Sandslash.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0028</h6>
+                        <h4>Sandslash</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-029Nidoran.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0029</h6>
+                        <h4>Nidoran♀</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-030Nidorina.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0030</h6>
+                        <h4>Nidorana</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-031Nidoqueen.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0031</h6>
+                        <h4>Nidoqueen</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-032Nidoran.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0032</h6>
+                        <h4>Nidoran♂</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-033Nidorino.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0033</h6>
+                        <h4>Nidorano</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-034Nidoking.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0034</h6>
+                        <h4>Nidoking</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-035Clefairy.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0035</h6>
+                        <h4>Clefairy</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fairy">fairy</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-036Clefable.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0036</h6>
+                        <h4>Clefable</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fairy">fairy</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-037Vulpix.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0037</h6>
+                        <h4>Vulpix</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-038Ninetales.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0038</h6>
+                        <h4>Ninetales</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-039Jigglypuff.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0039</h6>
+                        <h4>Jigglypuff</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="fairy">fairy</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-040Wigglytuff.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0040</h6>
+                        <h4>Wigglytuff</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="fairy">fairy</h5>
+                    </div>
+                </li>
+
+                <li class="slot">
+                    <img src="images/250px-041Zubat.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0041</h6>
+                        <h4>Zubat</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-042Golbat.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0042</h6>
+                        <h4>Golbat</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-043Oddish.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0043</h6>
+                        <h4>Oddish</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-044Gloom.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0044</h6>
+                        <h4>Gloom</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-045Vileplume.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0045</h6>
+                        <h4>Vileplume</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-046Paras.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0046</h6>
+                        <h4>Paras</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-047Parasect.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0047</h6>
+                        <h4>Parasect</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-048Venonat.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0048</h6>
+                        <h4>Venonat</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-049Venomoth.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0049</h6>
+                        <h4>Venomoth</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-050Diglett.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0050</h6>
+                        <h4>Diglett</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-051Dugtrio.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0051</h6>
+                        <h4>Dugtrio</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-052Meowth.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0052</h6>
+                        <h4>Meowth</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-053Persian.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0053</h6>
+                        <h4>Persian</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-054Psyduck.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0054</h6>
+                        <h4>Psyduck</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-055Golduck.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0055</h6>
+                        <h4>Golduck</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-056Mankey.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0056</h6>
+                        <h4>Mankey</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="figthing">figthing</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-057Primeape.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0057</h6>
+                        <h4>Primeape</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="figthing">figthing</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-058Growlithe.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0058</h6>
+                        <h4>Growlithe</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-059Arcanine.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0059</h6>
+                        <h4>Arcanine</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-060Poliwag.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0060</h6>
+                        <h4>Poliwag</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-061Poliwhirl.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0061</h6>
+                        <h4>Poliwhirl</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-062Poliwrath.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0062</h6>
+                        <h4>Poliwrath</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="figthing">figthing</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-063Abra.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0063</h6>
+                        <h4>Abra</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-064Kadabra.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0064</h6>
+                        <h4>Kadabra</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li>
+                
+                <li class="slot">
+                    <img src="images/250px-065Alakazam.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0065</h6>
+                        <h4>Alakazam</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-066Machop.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0066</h6>
+                        <h4>Machop</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="figthing">figthing</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-067Machoke.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0067</h6>
+                        <h4>Machoke</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="figthing">figthing</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-068Machamp.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0068</h6>
+                        <h4>Machamp</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="figthing">figthing</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-069Bellsprout.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0069</h6>
+                        <h4>Bellsprout</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-070Weepinbell.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0070</h6>
+                        <h4>Weepinbell</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-071Victreebel.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0071</h6>
+                        <h4>Victreebel</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-072Tentacool.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0072</h6>
+                        <h4>Tentacool</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-073Tentacruel.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0073</h6>
+                        <h4>Tentacruel</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-074Geodude.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0074</h6>
+                        <h4>Geodude</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-075Graveler.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0075</h6>
+                        <h4>Graveler</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-076Golem.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0076</h6>
+                        <h4>Golem</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-077Ponyta.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0077</h6>
+                        <h4>Ponyta</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li>
+                
+                <li class="slot">
+                    <img src="images/250px-078Rapidash.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0078</h6>
+                        <h4>Rapidash</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-079Slowpoke.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0079</h6>
+                        <h4>Slowpoke</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-080Slowbro.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0080</h6>
+                        <h4>Slowbro</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-081Magnemite.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0081</h6>
+                        <h4>Magnemite</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="electric">electric</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="steel">steel</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-082Magneton.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0082</h6>
+                        <h4>Magneton</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="electric">electric</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="steel">steel</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-083Farfetch'd.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0083</h6>
+                        <h4>Farfetch'd</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-084Doduo.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0084</h6>
+                        <h4>Doduo</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-085Dodrio.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0085</h6>
+                        <h4>Dodrio</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-086Seel.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0086</h6>
+                        <h4>Seel</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-087Dewgong.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0087</h6>
+                        <h4>Dewgong</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ice">ice</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-088Grimer.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0088</h6>
+                        <h4>Grimer</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-089Muk.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0089</h6>
+                        <h4>Muk</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-090Shellder.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0090</h6>
+                        <h4>Shellder</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-091Cloyster.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0091</h6>
+                        <h4>Shellder</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ice">ice</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-092Gastly.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0092</h6>
+                        <h4>Gastly</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ghost">ghost</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-093Haunter.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0093</h6>
+                        <h4>Haunter</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ghost">ghost</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-094Gengar.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0094</h6>
+                        <h4>Gengar</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ghost">ghost</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li>
+                
+                <li class="slot">
+                    <img src="images/250px-095Onix.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0095</h6>
+                        <h4>Onix</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-096Drowzee.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0096</h6>
+                        <h4>Drowzee</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-097Hypno.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0097</h6>
+                        <h4>Hypno</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li>
+                
+                <li class="slot">
+                    <img src="images/250px-098Krabby.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0098</h6>
+                        <h4>Krabby</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-099Kingler.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0099</h6>
+                        <h4>Kingler</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-100Voltorb.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0100</h6>
+                        <h4>Voltorb</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="electric">electric</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-101Electrode.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0101</h6>
+                        <h4>Electrode</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="electric">electric</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-102Exeggcute.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0102</h6>
+                        <h4>Exeggcute</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-103Exeggutor.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0103</h6>
+                        <h4>Exeggutor</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-104Cubone.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0104</h6>
+                        <h4>Cubone</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-105Marowak.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0105</h6>
+                        <h4>Marowak</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-106Hitmonlee.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0106</h6>
+                        <h4>Hitmonlee</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="figthing">figthing</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-107Hitmonchan.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0107</h6>
+                        <h4>Hitmonchan</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="figthing">figthing</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-108Lickitung.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0108</h6>
+                        <h4>Lickitung</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-109Koffing.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0109</h6>
+                        <h4>Koffing</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-110Weezing.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0110</h6>
+                        <h4>Weezing</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="poison">poison</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-111Rhyhorn.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0111</h6>
+                        <h4>Rhyhorn</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-112Rhydon.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0112</h6>
+                        <h4>Rhydon</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ground">ground</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-113Chansey.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0113</h6>
+                        <h4>Chansey</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-114Tangela.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0114</h6>
+                        <h4>Tangela</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="grass">grass</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-115Kangaskhan.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0115</h6>
+                        <h4>Kangaskhan</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-116Horsea.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0116</h6>
+                        <h4>Horsea</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-117Seadra.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0117</h6>
+                        <h4>Seadra</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-118Goldeen.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0118</h6>
+                        <h4>Goldeen</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-119Seaking.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0119</h6>
+                        <h4>Seaking</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li>
+                
+                <li class="slot">
+                    <img src="images/250px-120Staryu.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0120</h6>
+                        <h4>Staryu</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-121Starmie.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0121</h6>
+                        <h4>Starmie</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-122Mr._Mime.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0122</h6>
+                        <h4>Mr._Mime</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="fairy">fairy</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-123Scyther.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0123</h6>
+                        <h4>Scyther</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-124Jynx.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0124</h6>
+                        <h4>Jynx</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="ice">ice</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="psychic">psychic</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-125Electabuzz.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0125</h6>
+                        <h4>Electabuzz</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="electric">electric</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-126Magmar.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0126</h6>
+                        <h4>Magmar</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-127Pinsir.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0127</h6>
+                        <h4>Pinsir</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="bug">bug</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-128Tauros.webp" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0128</h6>
+                        <h4>Tauros</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-129Magikarp.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0129</h6>
+                        <h4>Magikarp</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-130Gyarados.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0130</h6>
+                        <h4>Gyarados</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-131Lapras.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0131</h6>
+                        <h4>Lapras</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="ice">ice</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-132Ditto.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0132</h6>
+                        <h4>Ditto</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-133Eevee.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0133</h6>
+                        <h4>Eevee</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-134Vaporeon.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0134</h6>
+                        <h4>Vaporeon</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-135Jolteon.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0135</h6>
+                        <h4>Jolteon</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="electric">electric</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-136Flareon.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0136</h6>
+                        <h4>Flareon</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="fire">fire</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-137Porygon.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0137</h6>
+                        <h4>Porygon</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-138Omanyte.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0138</h6>
+                        <h4>Omanyte</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-139Omastar.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0139</h6>
+                        <h4>Omaster</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-140Kabuto.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0140</h6>
+                        <h4>Kabuto</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-141Kabutops.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0141</h6>
+                        <h4>Kabutops</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="water">water</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-142Aerodactyl.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0142</h6>
+                        <h4>Aerodactyl</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="rock">rock</h5>
+                    </div>
+                    <div class="type_two">
+                        <h5 class="flying">flying</h5>
+                    </div>
+                </li> 
+
+                <li class="slot">
+                    <img src="images/250px-143Snorlax.png" alt="Italian Trulli">
+                    <div class="pokemon_name">
+                        <h6>#0143</h6>
+                        <h4>Snorlax</h4>
+                    </div>
+                    <div class="type_one">
+                        <h5 class="normal">normal</h5>
+                    </div>
+                </li> 
+            </ul>
+        </div>
+        <br>
+    </div>
+
+    <footer>
+        <img src="images/for_footer.png">
+        <div>
+            <p>
+            .| vincent
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
